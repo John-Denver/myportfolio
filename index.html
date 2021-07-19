@@ -48,6 +48,47 @@
                             START SECTION 2 - THE INTRO SECTION  
 /////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
+<style>
+.name{
+  color: #111111;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer
+}
+.name span{
+  font-size: 70px;
+  font-weight: 800;
+  transition: .9s linear
+}
+.name:hover span:nth-child(1){
+  display: none;
+  margin-right: 5px;
+  content: "";
+}
+.name:hover span:nth-child(1):after{
+  transition: .9s linear;
+  display: none;
+  content: "";
+}
+.name:hover span:nth-child(2)::before{
+  content: "";
+  transition: .9s linear
+}
+.name:hover span:nth-child(2)::after{
+  content: "Bogonko";
+  transition: .9s linear;
+}
+.name:hover span:nth-child(2)::after{
+  transition: .9s linear;
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 0 0 10px #fff,
+               0 0 20px #fff, 
+               0 0 40px #fff;
+}
+
+</style>
 <section id="home" class="intro-section">
   <div class="container">
     <div class="row align-items-center text-white">
@@ -55,8 +96,12 @@
       <div class="col-md-6 intros text-start">
         <h1 class="display-2">
           <span class="display-2--intro">Hey!, I'm Denver</span>
-          <span class="display-2--description lh-base">
-            Web Developer
+          <h1 class="name"><span>Ogamba</span><span></span></h1>
+          <span class="display-2--description lh-base mb-2">
+            Information Technologist(IT)
+          </span>
+          <span class="display-2--description lh-base mb-4">
+            Web.Python.Android Developer
           </span>
         </h1>
         <button type="button" class="rounded-pill btn-rounded">Get in Touch
@@ -117,6 +162,10 @@
       <div class="progress mb-4" style="height: 30px">
         <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">30%</div>
       </div>
+      <p>Git</p>
+      <div class="progress mb-4" style="height: 30px">
+        <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">40%</div>
+      </div>
     </div>
     
     </div>
@@ -166,9 +215,9 @@
           
         </div>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 services mt-4 text-end">
         <div class="services__pic">
-          <img src="images/services/service-1.png" alt="IT service illustration" class="img-fluid">
+          <img src="./assets/images/services/it.PNG" alt="IT service illustration" class="img-fluid">
         </div>
       </div>
     </div>
@@ -269,7 +318,7 @@
             </div>
             <!-- client picture  -->
             <div class="testimonials__picture">
-              <img src="./assets/images/testimonials/client-1.jpg" alt="client-1 picture" class="rounded-circle img-fluid">
+              <img src="./assets/images/myself (1).jpg" alt="client-1 picture" class="rounded-circle img-fluid">
             </div>
             <!-- client name & role  -->
             <div class="testimonials__name">
@@ -295,7 +344,7 @@
             </div>
             <!-- client picture  -->
             <div class="testimonials__picture">
-              <img src="./assets/images/testimonials/client-2.jpg" alt="client-2 picture" class="rounded-circle img-fluid">
+              <img src="./assets/images/services/bela-2.PNG" alt="client-2 picture" class="rounded-circle img-fluid">
             </div>
             <!-- client name & role  -->
             <div class="testimonials__name">
@@ -321,7 +370,7 @@
             </div>
             <!-- client picture  -->
             <div class="testimonials__picture">
-              <img src="./assets/images/testimonials/client-3.jpg" alt="client-3 picture" class="rounded-circle img-fluid">
+              <img src="./assets/images/services/bela.PNG" alt="client-3 picture" class="rounded-circle img-fluid">
             </div>
             <!-- client name & role  -->
             <div class="testimonials__name">
@@ -347,7 +396,7 @@
             </div>
             <!-- client picture  -->
             <div class="testimonials__picture">
-              <img src="./assets/images/testimonials/client-4.jpg" alt="client-4 picture" class="rounded-circle img-fluid">
+              <img src="./assets/images/myself (6).jpg" alt="client-4 picture" class="rounded-circle img-fluid">
             </div>
             <!-- client name & role  -->
             <div class="testimonials__name">
@@ -458,10 +507,10 @@
     <div class="row">
       <div class="col-lg-4 col-md-6">
         <div class="portfolio-box shadow">
-          <img src="./assets/images/portfolio/portfolio-1.jpg" alt="portfolio 1 image" title="Doctors Appointment System" class="img-fluid">
+          <img src="./assets/images/portfolio/portfolio-9.jpg" alt="portfolio 1 image" title="Doctors Appointment System" class="img-fluid">
           <div class="portfolio-info">
             <div class="caption">
-              <h4>Doctors Appointment</h4>
+              <h4>Doctors Appointment System</h4>
               <p>Python Project</p>
             </div>
           </div>
@@ -505,7 +554,7 @@
           <img src="./assets/images/portfolio/portfolio-5.jpg" alt="portfolio 5 image" title="portfolio 5 picture" class="img-fluid">
           <div class="portfolio-info">
             <div class="caption">
-              <h4>project name goes here 5</h4>
+              <h4>Beauty Parlour</h4>
               <p>category project</p>
             </div>
           </div>
@@ -516,8 +565,8 @@
           <img src="./assets/images/portfolio/portfolio-6.jpg" alt="portfolio 6 image" title="portfolio 6 picture" class="img-fluid">
           <div class="portfolio-info">
             <div class="caption">
-              <h4>project name goes here 6</h4>
-              <p>category project</p>
+              <h4>School Management System</h4>
+              <p>python project</p>
             </div>
           </div>
         </div>
@@ -655,7 +704,7 @@
           <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
           <a href="https://github.com/John-Denver"><i class="fab fa-github"></i></a>
           <a href="https://www.linkedin.com/in/bogonko-denver-0baa441b7/"><i class="fab fa-linkedin"></i></a>
-          <a href="https://web.whatsapp.com?+254712512358"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://wa.me/+254712512358"><i class="fab fa-whatsapp"></i></a>
         </div>
       </div>
     </div>

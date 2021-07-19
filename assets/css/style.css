@@ -10808,10 +10808,10 @@ textarea.form-control-lg {
   font-family: "Poppins", sans-serif;
 }
 .display-2--description {
-  font-size: 1rem;
+  font-size: 2rem;
   display: block;
   margin-top: 1.2rem;
-  text-transform: none;
+  text-transform: uppercase;
 }
 @media (min-width: 992px) {
   .display-2--description {
